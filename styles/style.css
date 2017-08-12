@@ -35,29 +35,34 @@ body{
   z-index:6;
   transition:0.3s;
 }
-#mainContent h1{
+#title{
+  position:absolute;
+  margin-left: 12vw;
+  width:40vw;
+  z-index: 6;
+}
+#title h1{
   margin:1%;
   font-size:5vw;
 }
-#mainContent p{
+#title p{
   margin-top:1%;
   margin-bottom: 1%;
-  font-size: 2vw;
+  font-size: 1.8vw;
 }
-#mainContent #rest{
-  margin-top: 30%;
+#rest1{
   position:absolute;
-  top:30%;
-  left:10%;
+  top:25vw;
+  left:13vw;
   color:rgb(155,207,229);
-  z-index: 6;
+  z-index: 3;
 }
 #pic{
   position:absolute;
   transform:translate(-50%, -50%);
-  top:20%;
-  left:80%;
-  width:40%;
+  top:15vw;
+  left:90vw;
+  width:65vw;
   z-index:0;
   transition:0.3s;
 }
@@ -74,7 +79,15 @@ body{
   background:rgb(74,82,83);
   z-index:2;
 }
-#content #square{
+#content #square1{
+  position:absolute;
+  top:0%;
+  height:50%;
+  width:60%;
+  background:rgb(74,82,83);
+  z-index:1;
+}
+#content #square2{
   position:absolute;
   top:50%;
   height:200%;
@@ -93,18 +106,28 @@ body{
     left: 100%;
     z-index: 3;
   }
-  #mainContent #rest{
-  margin-top: 110%;
+  #title h1{
+    font-size: 12vw;
+  }
+  #title p{
+  margin-top:1%;
+  margin-bottom: 1%;
+  font-size: 1.8vw;
+  }
+  #rest1{
+  top:70vw;
+  } 
+  #rest1 h1{
+    width:63vw;
+  }
 
-}
   #pic{
-      width:auto;
-      height:100%;
-      top:40%;
+      width:180vw;
+      top:56vw;
   }
   #content #triangle {
     position: absolute;
-    width: 200%;
+    width: 142vw;
     height: 90%;
     transform-origin:0% 0%;
     transform: rotate(45deg);
@@ -112,7 +135,11 @@ body{
     left: 0%;
     z-index: 2;
   }
-  #content #square{
+  #content #square1{
+    top:100.41vw;
+    width:100%;
+  }
+  #content #square2{
     position:absolute;
     top:100%;
     height:200%;
