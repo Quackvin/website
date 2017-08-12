@@ -1,0 +1,121 @@
+body{
+  all:unset;
+  background:rgb(74,82,83);
+  overflow-x:hidden;
+  font-family: "Lucida Console", Monaco, monospace;
+  color:rgb(233,237,239);
+}
+
+#sidebar{
+  position:fixed;
+  height:100%;
+  width:10%;
+  background:rgb(0,0,15);
+  z-index:5;
+}
+
+#heading{
+  position:absolute;
+  left:70%;
+  height:100%;
+  width:100%;
+  transform-origin:0 0;
+  transform: rotate(160deg);
+  background:rgb(34,96,158);
+  z-index:4;
+  transition:0.3s;
+}
+#mainContent{
+  position:absolute;
+  left:10%;
+  padding:0%;
+  margin:0;
+  width:50%;
+  height:20vw;
+  z-index:6;
+  transition:0.3s;
+}
+#mainContent h1{
+  margin:1%;
+  font-size:5vw;
+}
+#mainContent p{
+  margin-top:1%;
+  margin-bottom: 1%;
+  font-size: 2vw;
+}
+#mainContent #rest{
+  margin-top: 30%;
+  position:absolute;
+  top:30%;
+  left:10%;
+  color:rgb(155,207,229);
+  z-index: 6;
+}
+#pic{
+  position:absolute;
+  transform:translate(-50%, -50%);
+  top:20%;
+  left:80%;
+  width:40%;
+  z-index:0;
+  transition:0.3s;
+}
+#content{
+  transition:0.3s;
+}
+#content #triangle{
+  position:absolute;
+  left:50%;
+  height:200%;
+  width:100%;
+  transform-origin:0 0;
+  transform:rotate(20deg);
+  background:rgb(74,82,83);
+  z-index:2;
+}
+#content #square{
+  position:absolute;
+  top:50%;
+  height:200%;
+  width:100%;
+  background:rgb(74,82,83);
+  z-index:1;
+}
+@media (max-width:550px) {
+  #heading {
+    position: absolute;
+    transform-origin:0 0;
+    width: 130%;
+    height: 90%;
+    transform: rotate(145deg);
+    top: 0%;
+    left: 100%;
+    z-index: 3;
+  }
+  #mainContent #rest{
+  margin-top: 110%;
+
+}
+  #pic{
+      width:auto;
+      height:100%;
+      top:40%;
+  }
+  #content #triangle {
+    position: absolute;
+    width: 200%;
+    height: 90%;
+    transform-origin:0% 0%;
+    transform: rotate(45deg);
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+  }
+  #content #square{
+    position:absolute;
+    top:100%;
+    height:200%;
+    width:100%;
+  }
+}
