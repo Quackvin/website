@@ -44,13 +44,14 @@ body{
 #title h1{
   margin:1%;
   font-size:5vw;
+  letter-spacing: 0.6vw;
 }
 #title p{
   margin-top:1%;
   margin-bottom: 1%;
   font-size: 1.8vw;
 }
-#rest1{
+#body1{
   position:absolute;
   top:25vw;
   left:13vw;
@@ -66,20 +67,24 @@ body{
   z-index:0;
   transition:0.3s;
 }
-#content{
+#mask{
   transition:0.3s;
+  position: absolute;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
-#content #triangle{
+#triangle{
   position:absolute;
   left:50%;
-  height:200%;
-  width:100%;
+  height:43vh;
+  width:60vw;
   transform-origin:0 0;
   transform:rotate(20deg);
   background:rgb(74,82,83);
   z-index:2;
 }
-#content #square1{
+#square1{
   position:absolute;
   top:0%;
   height:50%;
@@ -87,11 +92,11 @@ body{
   background:rgb(74,82,83);
   z-index:1;
 }
-#content #square2{
+#square2{
   position:absolute;
-  top:50%;
-  height:200%;
-  width:100%;
+  top:40vh;
+  height:60vh;
+  width:100vw;
   background:rgb(74,82,83);
   z-index:1;
 }
@@ -114,10 +119,10 @@ body{
   margin-bottom: 1%;
   font-size: 1.8vw;
   }
-  #rest1{
+  #body1{
   top:70vw;
   } 
-  #rest1 h1{
+  #body1 h2{
     width:63vw;
   }
 
@@ -125,7 +130,7 @@ body{
       width:180vw;
       top:56vw;
   }
-  #content #triangle {
+  #triangle {
     position: absolute;
     width: 142vw;
     height: 90%;
@@ -135,14 +140,11 @@ body{
     left: 0%;
     z-index: 2;
   }
-  #content #square1{
+  #square1{
     top:100.41vw;
     width:100%;
   }
-  #content #square2{
-    position:absolute;
-    top:100%;
-    height:200%;
-    width:100%;
+  #square2{
+    display: none;
   }
 }
