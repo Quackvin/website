@@ -1,6 +1,6 @@
 body{
   all:unset;
-  background:rgb(74,82,83);
+  background:rgb(45,50,52);
   overflow-x:hidden;
   font-family: "Lucida Console", Monaco, monospace;
   color:rgb(233,237,239);
@@ -21,7 +21,7 @@ body{
   width:100%;
   transform-origin:0 0;
   transform: rotate(160deg);
-  background:rgb(34,96,158);
+  background:rgb(15,93,145);
   z-index:4;
   transition:0.3s;
 }
@@ -39,6 +39,7 @@ body{
   position:absolute;
   margin-left: 12vw;
   width:40vw;
+  overflow: hidden;
   z-index: 6;
 }
 #title h1{
@@ -58,8 +59,19 @@ body{
   color:rgb(155,207,229);
   z-index: 3;
 }
-#pic{
+#bodyExtra{
   position:absolute;
+  background: green;
+  top:100vh;
+  height:50%;
+  width:100vw;
+  background-image:url("../imgs/temp.jpg");
+  background-size:cover;
+  background-attachment: fixed;
+  z-index: 1;
+}
+#pic{
+  position:fixed;
   transform:translate(-50%, -50%);
   top:15vw;
   left:90vw;
@@ -81,24 +93,24 @@ body{
   width:60vw;
   transform-origin:0 0;
   transform:rotate(20deg);
-  background:rgb(74,82,83);
-  z-index:2;
+  background:rgb(45,50,52);
+  z-index:1;
 }
 #square1{
   position:absolute;
   top:0%;
   height:50%;
   width:60%;
-  background:rgb(74,82,83);
-  z-index:1;
+  background:rgb(45,50,52);
+  z-index:2;
 }
 #square2{
   position:absolute;
   top:40vh;
   height:60vh;
   width:100vw;
-  background:rgb(74,82,83);
-  z-index:1;
+  background:rgb(45,50,52);
+  z-index:2;
 }
 @media (max-width:550px) {
   #heading {
@@ -115,17 +127,20 @@ body{
     font-size: 12vw;
   }
   #title p{
-  margin-top:1%;
-  margin-bottom: 1%;
-  font-size: 1.8vw;
+    margin-top:1%;
+    margin-bottom: 1%;
+    font-size: 1.8vw;
   }
   #body1{
-  top:70vw;
+    position:absolute;
+    top:70vw;
   } 
   #body1 h2{
     width:63vw;
   }
-
+  #bodyExtra{
+    height:40%;
+  }
   #pic{
       width:180vw;
       top:56vw;
