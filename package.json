@@ -1,0 +1,24 @@
+{
+  "name": "kevinkuek",
+  "version": "1.0.0",
+  "description": "my personal website",
+  "main": "index.js",
+  "dependencies": {
+    "express" : "4.15.4",
+    "particles.js" : "2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quackvin/website.git"
+  },
+  "author": "Kevin Kuek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Quackvin/website/issues"
+  },
+  "homepage": "https://github.com/Quackvin/website#readme"
+}
