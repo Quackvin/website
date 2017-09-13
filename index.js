@@ -8,6 +8,9 @@ app.use(express.static('public'));
 
 app.get('/', function(req,res){
 	res.sendFile(path.join(__dirname + '/templates/index.html'));
+})
+.get('/about', function(req, res){
+	res.sendFile(path.join(__dirname + '/templates/about.html'))
 });
 
 app.listen(8080);
