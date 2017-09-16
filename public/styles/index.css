@@ -35,7 +35,7 @@
   margin-bottom: 1%;
   font-size: 1.8vw;
 }
-#body1{
+#content{
   position:absolute;
   top:25vw;
   width:450px;
@@ -134,12 +134,12 @@
     margin-bottom: 1%;
     font-size: 1.8vw;
   }
-  #body1{
+  #content{
     position:absolute;
     width: auto;
     top:70vw;
   } 
-  #body1 h2{
+  #content h2{
     width:63vw;
   }
   #bodyExtra{
