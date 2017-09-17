@@ -1,11 +1,7 @@
 #content{
 	display: flex;
 	flex-direction: row;
-}
-
-#title{
-	padding-top: 25px;
-	padding-left: 25px;
+	margin:0;
 }
 
 #title h1{
@@ -14,11 +10,24 @@
 
 #info{
 	flex:2;
+	margin-left: 10px;
+	padding-bottom: 5%;
+}
+#info span{
+	color:rgb(255,255,255);
 }
 #imagebox{
 	flex:1;
+	overflow: scroll;
 }
 #image{
 	width:100%;
     box-shadow: 50px 50px 113px #defeec inset,-50px -50px 110px #defeec inset;
+    overflow: scroll;
+}
+
+@media (max-width:550px) {
+	#content{
+		flex-direction: column;
+	}
 }

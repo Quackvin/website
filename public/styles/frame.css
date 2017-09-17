@@ -31,3 +31,15 @@ body{
   position: absolute;
   left:100px;
 }
+
+@media (max-width:550px) {
+  #sidebar{
+    width: 55px;
+  }
+  .sidebarItem{
+    writing-mode: vertical-lr;
+  }
+  #main{
+    left:55px;
+  }
+}

@@ -11,6 +11,12 @@ app.get('/', function(req,res){
 })
 .get('/about', function(req, res){
 	res.sendFile(path.join(__dirname + '/templates/about.html'))
+})
+.get('/portfolio', function(req, res){
+	res.sendFile(path.join(__dirname + '/templates/portfolio.html'))
+})
+.get('/contact', function(req, res){
+	res.sendFile(path.join(__dirname + '/templates/contact.html'))
 });
 
 app.listen(8080);
