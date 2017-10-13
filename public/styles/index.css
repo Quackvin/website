@@ -9,6 +9,9 @@
   z-index:4;
   transition:0.3s;
 }
+#main{
+    height:100vh;
+}
 #mainContent{
   position:absolute;
   left:10%;
@@ -43,25 +46,26 @@
   color:rgb(155,207,229);
   z-index: 3;
 }
-#bodyExtra{
+.section{
   position:absolute;
-  background: green;
   top:100vh;
   height:50%;
   width:100vw;
-  background-image:url("../imgs/temp.jpg");
   background-size:cover;
   background-attachment: fixed;
   z-index: 1;
 }
+#about{
+  background-image:url("../imgs/temp.jpg");
+}
 #pic{
-  position:fixed;
-  transform:translate(-50%, -50%);
-  top:15vw;
-  left:90vw;
-  width:65vw;
-  z-index:0;
-  transition:0.3s;
+    position:fixed;
+    transform:translate(-50%, -50%);
+    top:15vw;
+    left:90vw;
+    width:65vw;
+    z-index:0;
+    transition:0.3s;
 }
 #mask{
   transition:0.3s;
@@ -126,7 +130,7 @@
   #content h2{
     width:63vw;
   }
-  #bodyExtra{
+  .section{
     height:40%;
   }
   #pic{
